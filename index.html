@@ -147,10 +147,13 @@
   @media (max-width: 560px) { .combo-grid { grid-template-columns: 1fr; } }
 
   /* Productos */
-  .product-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-m); overflow: hidden; }
+  .product-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-m); overflow: hidden; }
   .product-cell { background: var(--cream-100); padding: 28px 24px; }
   .product-cell .mono { font-family: var(--font-display); font-style: italic; font-size: 1.1rem; color: var(--olive-900); margin-bottom: 6px; }
-  .product-cell p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+  .product-cell p { font-size: 0.88rem; color: var(--ink-soft); margin: 0 0 14px; }
+  .product-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.86rem; font-weight: 600; color: var(--blush-deep); text-decoration: none; }
+  .product-link svg { width: 14px; height: 14px; transition: transform .2s var(--ease); }
+  .product-link:hover svg { transform: translateX(3px); }
   @media (max-width: 700px) { .product-row { grid-template-columns: 1fr; } }
 
   /* Trust / trayectoria */
@@ -365,7 +368,7 @@
         <button class="combo-card reveal-init combo-trigger" data-combo="Facial full" style="transition-delay:.16s">
           <span class="tag">Estética</span>
           <h3>Facial full</h3>
-          <p>Microneedling + BB lips.</p>
+          <p>Microneedling + BB lips + Radiofrecuencia.</p>
           <span class="cta">Consultar por este combo <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
       </div>
@@ -380,16 +383,14 @@
       </div>
       <div class="product-row reveal-init">
         <div class="product-cell">
-          <p class="mono">Pharmanex · Nu Skin</p>
-          <p>Suplementos nutricionales</p>
-        </div>
-        <div class="product-cell">
           <p class="mono">Laca Laboratorio</p>
-          <p>Dermatocosmética</p>
+          <p>Dermatocosmética. Si hacés tu tratamiento facial acá, tenés 15% de descuento en los productos que lleves para complementarlo en tu casa.</p>
+          <a class="product-link" href="http://catalogo.laboratoriolaca.com/" target="_blank" rel="noopener">Ver catálogo <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
         <div class="product-cell">
           <p class="mono">Fragancias Sensitive</p>
-          <p>Inspiradas en perfumes importados</p>
+          <p>Inspiradas en perfumes importados.</p>
+          <a class="product-link" href="https://www.instagram.com/fragancias.sensitive?stkn=b3d6dzFwZWJpYmhn&utm_source=qr" target="_blank" rel="noopener">Ver catálogo <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
     </div>
